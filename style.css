@@ -1,0 +1,108 @@
+body {
+  background-color: #333;
+}
+
+.typing {
+  animation: typing 5s steps(20, end);
+  white-space: nowrap;
+  border-right: 4px solid #333;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#my-heading {
+  position: center;
+  top: 50px;
+  left: 50px;
+  color: rgb(247, 245, 245);
+}
+
+
+.banner {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discord-button {
+  display: center;
+  padding: 10px 20px;
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.discord-button:hover {
+  background-color: #647cda;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.discord-button:active {
+  transform: translateY(1px);
+}
+
+.discord-button.discord-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  animation: move 5s linear infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.dot:nth-child(5) {
+  animation-delay: 4s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
